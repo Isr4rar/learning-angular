@@ -1,0 +1,26 @@
+<mat-card class="mycard">
+    <mat-card-header>
+      <mat-card-title>Person</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+          <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" value="{{person.name}}">
+         
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Idade" value="{{person.age}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="CEP" value="{{person.address.cep}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Numero" value="{{person.address.numero}}">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">APROVED</button>
+      <button mat-raised-button color="warn">REPROVED</button>
+    </mat-card-actions>
+  </mat-card>
